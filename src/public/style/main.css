@@ -1,0 +1,491 @@
+*{
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins';
+}
+
+.contenedor-nav{
+	background-image: linear-gradient(to right, #df1d12 0%, #df2012 100%);
+}
+
+.logo img{
+	display: flex;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.enlaces-header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: 10px 250px 30px 250px;
+}
+.enlaces-header a{
+	text-decoration: none;
+	color: #fff;
+	font-size: large;
+	border: solid 1px #fff;
+	padding: 5px 20px;
+	border-radius: 30px;
+	transition: all 150ms;
+}
+.enlaces-header a:hover{
+	color: #df1d12;
+	background-color: #fff;
+	font-size: large;
+	transition: all 150ms;
+}
+
+/* ----------------------  SLIDES ----------------------- */
+.slider{
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 100%;
+	height: 500px;
+}
+
+/* css for manual slide navigation */
+.navigation-manual{
+	position: absolute;
+	width: 100%;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.manual-btn{
+	border: 2px solid #99c0c2;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual-btn:hover{
+	background: #99c0c2;
+}
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+/* css for automatic navigation */
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 460px;
+}
+.navigation-auto div{
+	border: 2px solid #99c0c2;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #99c0c2;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #99c0c2;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #99c0c2;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #99c0c2;
+}
+
+/* -------------------- Acerca de nosotros ------------- */
+.acerca-nosotros{
+	display: flex;
+	background: #1D1D1B;
+}
+.foto1{
+	margin: 50px;
+	padding: 0 50px;
+	width: 800px;
+}
+.texto1{
+	width: 40%;
+	margin: 50px;
+	color: #fff;	
+}
+.texto1 h1{
+	display: flex;
+	justify-content: center;
+	margin: 0 20px;
+	font-family: 'Bebas Neue Regular';
+	font-size: 1.5cm;
+	font-weight: lighter;
+}
+.texto1 p{
+	display: flex;
+	justify-content: center;
+	width: 65%;
+	font-size:x-large;
+	margin: 20px auto;
+	
+}
+.texto1 a{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 20px auto;
+	padding: 7px 0;
+	font-size:large;
+	border: solid 1px #fff;
+	border-radius: 50px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 150ms;
+}
+.texto1 a:hover{
+	background: #fff;
+	color: #000;
+	transition: all 150ms;
+}
+
+/* -------------- Productos ----------------- */
+.productos-menu h1{
+	background: #df1d12;
+	color: #fff;
+	margin: 30px 0;
+	padding: 0 30px;
+	font-size: 1.5cm;
+}
+/* .cont-product1{
+	display: flex;
+}
+.cont-product2{
+	display: flex;
+} */
+.cont-productos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* padding: 40px 0; */
+	padding-bottom: 40px;
+	max-width: 100%;
+	margin: auto;
+}
+.cont-productos .product{
+	position: relative;
+	width: 320px;
+	margin: 30px;
+}
+
+/* ----------- Ficha Técnica ----------- */
+.ficha{
+	background: #000;
+	color: #fff;
+}
+.ficha a{
+	text-decoration: none;
+	color: #fff;
+	transition: all 150ms;
+}
+.ficha a:hover{
+	color: rgb(255, 181, 181);
+	transition: all 150ms;
+}
+.ficha h1{
+	display: flex;
+	justify-content: center;
+	font-family: 'Bebas Neue Regular';
+	font-weight: lighter;
+	padding: 40px 0;
+	font-size: 2cm;
+	letter-spacing: 2px;
+}
+
+/* ------------------------ FLECHA ARRIBA --------------------------- */
+#arriba {
+	position: relative;
+	bottom: 200px;
+  }
+  
+  .btn-flotante {
+	  border-radius: 50px; /*Borde del boton*/
+	  position: fixed;
+	  bottom: 40px;
+	  right: 10%;
+	  transition: all 300ms ease 0ms;
+	  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	color: #000;
+	  
+  }
+  .btn-flotante:hover {
+	  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	  transform: translateY(-7px);
+	
+  }
+  @media only screen and (max-width: 600px) {
+	   .btn-flotante {
+		  font-size: 14px;
+		  padding: 12px 20px;
+		  bottom: 20px;
+		  right: 20px;
+	  }
+  }
+
+/* --------- footer ------------- */
+.contacto{
+	display: flex;
+	background: #f1f2f4;
+}
+.contacto .contactanos{
+	margin: 60px 60px 0 60px;
+	
+}
+.contacto .contactanos h1{
+	font-family: 'Bebas Neue Regular';
+	font-size: 2.5cm;
+	font-weight: lighter;
+	letter-spacing: 3px;
+}
+.contacto .contactanos p{
+	margin: 20px 0 40px 0;
+	font-size: 0.7cm;
+}
+.facebok{
+	display: flex;
+	padding: 0 40px;
+} 
+.istagran{
+	display: flex;
+	padding: 0 40px;
+} 
+.ws{
+	display: flex;
+	padding: 0 40px;
+}
+.img-footer img{
+	width: 80%;
+}
+.logo-footer{
+	background-image: linear-gradient(to right, #df1d12 0%, #df2012 100%);
+	padding: 20px 80px;
+}
+
+/* ================== VENTANA NOSOTROS =================== */
+.negocios{
+	display: flex;
+	padding: 40px 80px;
+	background: #df1d12;
+}
+.cont-negocios{
+	background-color: #fff;
+	display: flex;
+}
+.texto3{
+	width: 50%;
+	padding: 0 100px;
+}
+.texto3 h1{
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	font-size: 1cm;
+}
+.texto3 p{
+	font-size: .7cm;
+	text-align: justify;
+}
+.img-negoc img{
+	margin: 40px;
+	height: 400px;
+}
+
+.porque{
+	background: #df1d12;
+	color: #fff;
+}
+.titulo-porque h1{
+	display: flex;
+	font-family: 'Bebas Neue Regular';
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 2cm;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	text-align: justify;
+}
+.txtporque p{
+	display: flex;
+	justify-content: center;
+	margin: 10px 100px 0 100px;
+	font-size: 26px;
+	text-align: justify;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.logo-footer a{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+/* ================= PRODUCTOS ==================== */
+.titulo-productos h1{
+	display: flex;
+	justify-content: right;
+	margin: 0 200px;
+	padding: 20px 0;
+	font-family: 'Bebas Neue Regular';
+	font-size: 2cm;
+	letter-spacing: 2px;
+}
+.list-products{
+	display: flex;
+	margin: 0 20px;
+	padding: 30px 0;
+	border-top: 4px solid #000;
+}
+.prod1 img{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.prod1 p{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 20px 0;
+	font-size: x-large;
+	font-weight: bold;
+}
+/* ---------------------------------------------------- */
+.standar-mockup{
+	display: flex;
+	margin: 0 80px;
+	align-items: center;
+}
+.polvo-mockup{
+	padding: 80px 0;
+}
+.imgStd img{
+	width: 500px;
+}
+.title-mockup{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	/* padding-top: 100px; */
+}
+.title-mockup img{
+	height: 100px;
+}
+.title-mockup h1{
+	display: flex;
+	padding: 15px 0 0 20px;
+	font-family: 'Bebas Neue Regular';
+	font-size: 2cm;
+}
+
+.parrafo-mockup p{
+	display: flex;
+	justify-content: center;
+	margin: 0 100px;
+	font-size: x-large;
+	text-align: justify;
+	padding-top: 20px;
+}
+.parrafo-mockup h3{
+	display: flex;
+	justify-content: center;
+	margin: 30px 100px 0 100px;
+	font-family: 'Bebas Neue Regular';
+	font-size: x-large;
+	letter-spacing: 1px;
+	padding: 20px;
+	width: 270px;
+	background: #000;
+	color: #fff;
+}
+.tittlePolvo h1{
+	display: flex;
+	font-family: 'Bebas Neue Regular';
+	font-size: 2cm;
+	justify-content: center;
+	margin: auto;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+.tittlePorcelana h1{
+	display: flex;
+	font-family: 'Bebas Neue Regular';
+	font-size: 2cm;
+	justify-content: center;
+	margin: auto;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+.colormax h1{
+	padding-right: 15px;
+}
+
+/* ======== VENTANA FICHA TÉCNICA ========= */
+.descargas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* padding: 40px 0; */
+	padding-bottom: 40px;
+	max-width: 100%;
+	margin: auto;
+}
+.descargas .ficha-ventana{
+	position: relative;
+	width: 320px;
+	margin: 30px;
+}
+.ficha-ventana p{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	/* padding: 20px 0; */
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+}
