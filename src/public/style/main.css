@@ -148,7 +148,7 @@ body{
 	display: flex;
 	justify-content: center;
 	margin: 0 20px;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 1.5cm;
 	font-weight: lighter;
 }
@@ -226,7 +226,7 @@ body{
 .ficha h1{
 	display: flex;
 	justify-content: center;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-weight: lighter;
 	padding: 40px 0;
 	font-size: 2cm;
@@ -243,7 +243,7 @@ body{
 	  border-radius: 50px; /*Borde del boton*/
 	  position: fixed;
 	  bottom: 40px;
-	  right: 10%;
+	  right: 5%;
 	  transition: all 300ms ease 0ms;
 	  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	color: #000;
@@ -273,7 +273,7 @@ body{
 	
 }
 .contacto .contactanos h1{
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 2.5cm;
 	font-weight: lighter;
 	letter-spacing: 3px;
@@ -337,7 +337,7 @@ body{
 }
 .titulo-porque h1{
 	display: flex;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	justify-content: center;
 	margin: 0 auto;
 	font-size: 2cm;
@@ -369,7 +369,7 @@ body{
 	justify-content: right;
 	margin: 0 200px;
 	padding: 20px 0;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 2cm;
 	letter-spacing: 2px;
 }
@@ -400,7 +400,10 @@ body{
 	align-items: center;
 }
 .polvo-mockup{
-	padding: 80px 0;
+	padding: 110px 0;
+}
+.blanqueador-mockup{
+	padding: 110px 0 130px 0;
 }
 .imgStd img{
 	width: 500px;
@@ -418,7 +421,7 @@ body{
 .title-mockup h1{
 	display: flex;
 	padding: 15px 0 0 20px;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 2cm;
 }
 
@@ -434,7 +437,8 @@ body{
 	display: flex;
 	justify-content: center;
 	margin: 30px 100px 0 100px;
-	font-family: 'Bebas Neue Regular';
+	
+	font-family: 'Bebas Neue';
 	font-size: x-large;
 	letter-spacing: 1px;
 	padding: 20px;
@@ -442,9 +446,12 @@ body{
 	background: #000;
 	color: #fff;
 }
+.parrafo-mockup h3 a {
+	text-decoration: none;
+}
 .tittlePolvo h1{
 	display: flex;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 2cm;
 	justify-content: center;
 	margin: auto;
@@ -453,7 +460,7 @@ body{
 }
 .tittlePorcelana h1{
 	display: flex;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 2cm;
 	justify-content: center;
 	margin: auto;
@@ -480,7 +487,7 @@ body{
 	width: 320px;
 	margin: 30px;
 }
-.ficha-ventana p{
+.descargar_ficha{
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -488,4 +495,9 @@ body{
 	font-size: x-large;
 	font-weight: bold;
 	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+.descargar_ficha:hover{
+	color: #df1d12;
 }
