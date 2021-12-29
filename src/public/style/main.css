@@ -148,9 +148,9 @@ body{
 	display: flex;
 	justify-content: center;
 	margin: 0 20px;
-	font-family: 'Bebas Neue';
-	font-size: 1.5cm;
-	font-weight: lighter;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1cm;
+	font-weight: bold;
 }
 .texto1 p{
 	display: flex;
@@ -226,11 +226,11 @@ body{
 .ficha h1{
 	display: flex;
 	justify-content: center;
-	font-family: 'Bebas Neue';
-	font-weight: lighter;
+	/* font-family: 'Bebas Neue'; */
+	font-weight: bold;
 	padding: 40px 0;
-	font-size: 2cm;
-	letter-spacing: 2px;
+	font-size: 1cm;
+	/* letter-spacing: 1px; */
 }
 
 /* ------------------------ FLECHA ARRIBA --------------------------- */
@@ -273,10 +273,10 @@ body{
 	
 }
 .contacto .contactanos h1{
-	font-family: 'Bebas Neue';
-	font-size: 2.5cm;
-	font-weight: lighter;
-	letter-spacing: 3px;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1.5cm;
+	font-weight: bold;
+	/* letter-spacing: 1px; */
 }
 .contacto .contactanos p{
 	margin: 20px 0 40px 0;
@@ -337,12 +337,12 @@ body{
 }
 .titulo-porque h1{
 	display: flex;
-	font-family: 'Bebas Neue';
+	/* font-family: 'Bebas Neue'; */
 	justify-content: center;
 	margin: 0 auto;
-	font-size: 2cm;
-	font-weight: lighter;
-	letter-spacing: 3px;
+	font-size: 1.5cm;
+	font-weight: bold;
+	/* letter-spacing: 3px; */
 	text-align: justify;
 }
 .txtporque p{
@@ -369,9 +369,9 @@ body{
 	justify-content: right;
 	margin: 0 200px;
 	padding: 20px 0;
-	font-family: 'Bebas Neue';
-	font-size: 2cm;
-	letter-spacing: 2px;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1.5cm;
+	/* letter-spacing: 2px; */
 }
 .list-products{
 	display: flex;
@@ -421,8 +421,8 @@ body{
 .title-mockup h1{
 	display: flex;
 	padding: 15px 0 0 20px;
-	font-family: 'Bebas Neue';
-	font-size: 2cm;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1.5cm;
 }
 
 .parrafo-mockup p{
@@ -437,8 +437,7 @@ body{
 	display: flex;
 	justify-content: center;
 	margin: 30px 100px 0 100px;
-	
-	font-family: 'Bebas Neue';
+	/* font-family: 'Bebas Neue'; */
 	font-size: x-large;
 	letter-spacing: 1px;
 	padding: 20px;
@@ -451,20 +450,20 @@ body{
 }
 .tittlePolvo h1{
 	display: flex;
-	font-family: 'Bebas Neue';
-	font-size: 2cm;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1.5cm;
 	justify-content: center;
 	margin: auto;
-	font-weight: lighter;
-	letter-spacing: 1px;
+	font-weight: bold;
+	/* letter-spacing: 1px; */
 }
 .tittlePorcelana h1{
 	display: flex;
-	font-family: 'Bebas Neue';
-	font-size: 2cm;
+	/* font-family: 'Bebas Neue'; */
+	font-size: 1.5cm;
 	justify-content: center;
 	margin: auto;
-	font-weight: lighter;
+	font-weight: bold;
 	letter-spacing: 1px;
 }
 .colormax h1{
