@@ -446,7 +446,7 @@ body{
 	background: #000;
 	color: #fff;
 }
-.parrafo-mockup h3 a {
+.parrafo-mockup a {
 	text-decoration: none;
 }
 .tittlePolvo h1{
@@ -469,6 +469,11 @@ body{
 }
 .colormax h1{
 	padding-right: 15px;
+}
+
+.empaste{
+	padding-top: 90px;
+	padding-bottom: 80px;
 }
 
 /* ======== VENTANA FICHA TÉCNICA ========= */
