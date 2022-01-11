@@ -16,6 +16,7 @@ body{
 	display: flex;
 	margin: 0 auto;
 	padding: 20px 0;
+	width: 400px;
 }
 
 .enlaces-header{
@@ -42,7 +43,101 @@ body{
 }
 
 /* ----------------------  SLIDES ----------------------- */
-.slider{
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 48px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* .slider{
 	width: 100%;
 	height: 500px;
 	border-radius: 10px;
@@ -63,10 +158,10 @@ body{
 .slide img{
 	width: 100%;
 	height: 500px;
-}
+} */
 
 /* css for manual slide navigation */
-.navigation-manual{
+/* .navigation-manual{
 	position: absolute;
 	width: 100%;
 	margin-top: -40px;
@@ -97,10 +192,10 @@ body{
 }
 #radio4:checked ~ .first{
 	margin-left: -60%;
-}
+} */
 
 /* css for automatic navigation */
-.navigation-auto{
+/* .navigation-auto{
 	position: absolute;
 	display: flex;
 	width: 100%;
@@ -127,7 +222,34 @@ body{
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
 	background: #99c0c2;
-}
+} */
+
+/* ========= Next & previous buttons =========== */
+/* .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+} */
+/* Position the "next button" to the right */
+/* .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+} */
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+} */
+
+
 
 /* -------------------- Acerca de nosotros ------------- */
 .acerca-nosotros{
@@ -505,4 +627,94 @@ body{
 }
 .descargar_ficha:hover{
 	color: #df1d12;
+}
+
+
+/*---------------------------------------- Breakpoints responsive ---------------------------------------*/
+
+@media screen and (max-width:800px) {
+	.logo img{
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 80%;
+	}
+	.enlaces-header{
+		padding: 0;
+	}
+	.enlaces-header a{
+		padding: 5px 5px;
+		border-radius: 10px;
+	}
+	/* ------------------------ */
+	.foto1{
+		display: none;
+		width: 100px;
+	}
+	.texto1{
+		width: 80%;
+	}
+	.texto1 h1{
+		font-size: 30px;
+	}
+	.texto1 p{
+		font-size: large;
+	}
+	.ficha h1{
+		font-size: 30px;
+	}
+	.contacto{
+		width: 100%;
+	}
+	.contacto .contactanos{
+		margin: 10px;
+	}
+	.contacto .contactanos h1{
+		font-size: 30px;
+	}
+	.contacto .contactanos p{
+		font-size: 20px;
+		width: 300px;
+		
+	}
+	.img-footer{
+		display: none;
+	}
+	.facebok, .istagran, .ws{
+		padding: 1px;
+	}
+	.facebok img{
+		width: 50px;
+		padding: 0px 0px;
+	}
+	.istagran img{
+		width: 50px;
+		padding: 0px;
+	}
+	.ws img{
+		width: 50px;
+		padding: 0px;
+	}
+	/* ------------------ */
+	.titulo-porque h1{
+		font-size: 30px;
+	}
+	.txtporque p{
+		font-size: 20px;
+	}
+	.img-negoc img{
+		display: none;
+	}
+	/* --------------------- */
+	.titulo-productos h1{
+		font-size: 30px;
+	}
+	.imgStd img{
+		width: 100px;
+	}
+	.prod1 img{
+		width: 40%;
+	}
+	.title-mockup img, .title-mockup h1{
+		width: 100px;
+	}
 }
