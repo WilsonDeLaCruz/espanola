@@ -499,6 +499,9 @@ to {opacity: 1}
 	width: 320px;
 	margin: 30px;
 }
+.descargas .ficha-ventana img{
+	width: 320px;
+}
 .descargar_ficha{
 	display: flex;
 	justify-content: center;
