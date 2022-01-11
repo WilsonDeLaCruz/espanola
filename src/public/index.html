@@ -18,7 +18,7 @@
     <nav>
         <section class="contenedor-nav">
             <div class="logo">
-                <a href="/"><img src="img/logoEspañola.svg" alt="logo españoala" width="400px"></a>
+                <a href="/"><img src="img/logoEspañola.svg" alt="logo españoala"></a>
             </div>
             <div class="enlaces-header">
                 <a href="index.html">Inicio</a>
@@ -29,48 +29,48 @@
         </section>
     </nav>
 
+    <!-- ============Slideshow container=========== -->
     <!-- Slideshow container -->
-    <div class="slider">
-        <div class="slides">
-            <!-- radio buttons -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
+    <div class="slideshow-container">
 
-            <!-- slide images start -->
-            <div class="slide first">
-                <img src="img/CORREC2.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/CORREC2 copia.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/CORREC2 copia 2.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/CORREC2 copia 4.png" alt="">
-            </div>
-
-            <!-- automatic navigation -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/CORREC2.png" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/CORREC2 copia.png" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/CORREC2 copia 2.png" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
         </div>
 
-        <!-- manual navigation -->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/CORREC2 copia 4.png" style="width:100%">
+            <!-- <div class="text">Caption Four</div> -->
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="puntos" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </div>
-
+    
     <!-- navigation ends -->
 
     <div class="acerca-nosotros">
@@ -162,14 +162,34 @@
     </footer>
 
     <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-            counter = 1;
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
         }
-    }, 5000); 
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
     </script>
 
     <script src="index.js"></script>
