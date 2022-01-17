@@ -328,10 +328,10 @@ to {opacity: 1}
 	display: flex;
 	justify-content: center;
 	padding: 40px 0;
-	font-size: 1cm;
+	font-size: .9cm;
 }
 .texto3 p{
-	font-size: .7cm;
+	font-size: .6cm;
 	text-align: justify;
 }
 .img-negoc img{
