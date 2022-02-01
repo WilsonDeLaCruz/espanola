@@ -600,7 +600,7 @@ to {opacity: 1}
 		font-size: 30px;
 	}
 	.imgStd img{
-		width: 400px;
+		width: 370px;
 	}
 	.prod1 img{
 		width: 40%;
@@ -627,6 +627,9 @@ to {opacity: 1}
 	.negocios {
 		padding: 40px 7px;
 	}
+	.list-products{
+		display: none;
+	}
 	.texto1 a{
 		width: 100%;
 		padding: 7px 20px;
@@ -638,5 +641,8 @@ to {opacity: 1}
 		display:none;
 		padding: 0;
 		position: relative;
+	}
+	.parrafo-mockup p{
+		font-size: large;
 	}
 }
