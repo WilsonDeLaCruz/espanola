@@ -648,4 +648,7 @@ to {opacity: 1}
 	.tittleEmpaste{
 		flex-direction: column;
 	}
+	.empaste, .polvo-mockup, .blanqueador-mockup{
+		padding: 50px 0;
+	}
 }
