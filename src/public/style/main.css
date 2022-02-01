@@ -645,4 +645,7 @@ to {opacity: 1}
 	.parrafo-mockup p{
 		font-size: large;
 	}
+	.tittleEmpaste{
+		flex-direction: column;
+	}
 }
