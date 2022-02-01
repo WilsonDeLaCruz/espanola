@@ -323,6 +323,7 @@ to {opacity: 1}
 .texto3{
 	width: 50%;
 	padding: 0 100px;
+	margin: 50px;
 }
 .texto3 h1{
 	display: flex;
@@ -588,8 +589,8 @@ to {opacity: 1}
 		font-size: 30px;
 	}
 	.txtporque p{
-		font-size: 20px;
-		margin: 7px;
+		font-size: large;
+		margin: 0 30px;
 	}
 	.img-negoc img{
 		display: none;
@@ -599,17 +600,29 @@ to {opacity: 1}
 		font-size: 30px;
 	}
 	.imgStd img{
-		width: 100px;
+		width: 400px;
 	}
 	.prod1 img{
 		width: 40%;
 	}
-	.title-mockup img, .title-mockup h1{
-		width: 100px;
+	.title-mockup img{
+		width: 30%;
+		height: 30%;
+	}
+	.title-mockup h1, 
+	.tittlePolvo h1, 
+	.tittlePorcelana h1{
+		font-size: 40px;
 	}
 	.texto3 {
 		width: 90%;
 		padding: 0;
+	}
+	.texto3 h1{
+		font-size: 30px;
+	}
+	.texto3 p{
+		font-size: large;
 	}
 	.negocios {
 		padding: 40px 7px;
@@ -617,5 +630,13 @@ to {opacity: 1}
 	.texto1 a{
 		width: 100%;
 		padding: 7px 20px;
+	}
+	.standar-mockup{
+		flex-direction: column;
+	}
+	.btn-flotante, .fas, .fa-3x, .fa-arrow-circle-up{
+		display:none;
+		padding: 0;
+		position: relative;
 	}
 }
